@@ -1,7 +1,20 @@
+'use strict';
+
 const express = require('express'),
     app = express(),
-    port = process.env.PORT || 3000;
+    bodyParser = require('body-parser'),
+    mongoose = require('mongoose'),
+    port = 3000;
+
+
+app.use(bodyParser.urlencoded({extended: true}));
+app.use(bodyParser.json());
+
+
+const routes = require('./api/routes');
+routes(app);
+
+
 
 app.listen(port);
-
-console.log('Server started on: ' + port);
+console.log('Server started on port: ' + port);
