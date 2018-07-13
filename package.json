@@ -1,0 +1,27 @@
+{
+  "name": "planner",
+  "version": "0.0.0",
+  "description": "planner with react.js",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksandrkobzar/react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksandrkobzar/react/issues"
+  },
+  "homepage": "https://github.com/oleksandrkobzar/react#readme",
+  "devDependencies": {
+    "nodemon": "^1.18.1"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.3"
+  }
+}
